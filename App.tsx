@@ -1,0 +1,28 @@
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import AIChatBot from './components/AIChatBot';
+
+const App: React.FC = () => {
+  return (
+    <div className="bg-background min-h-screen text-zinc-100 selection:bg-indigo-500/30 selection:text-indigo-200">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+      <AIChatBot />
+    </div>
+  );
+};
+
+export default App;
