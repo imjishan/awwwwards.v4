@@ -4,6 +4,7 @@ import * as React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { Menu, X } from "lucide-react"
+import { LiquidButton } from "./liquid-glass-button"
 
 // Hardcoding links here to match the requested component structure but with portfolio content
 const navItems = [
@@ -65,16 +66,15 @@ const Navbar1 = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: 0.2 }}
-          whileHover={{ scale: 1.05 }}
         >
-          <a
+          <LiquidButton
+            className="px-5 py-2 text-sm text-black rounded-full hover:bg-black/5 transition-colors"
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-5 py-2 text-sm text-white bg-black rounded-full hover:bg-gray-800 transition-colors"
           >
             Resume
-          </a>
+          </LiquidButton>
         </motion.div>
 
         {/* Mobile Menu Button */}
@@ -125,13 +125,13 @@ const Navbar1 = () => {
                 exit={{ opacity: 0, y: 20 }}
                 className="pt-6"
               >
-                <a
+                <LiquidButton
                   href="https://github.com"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 text-base text-white bg-black rounded-full hover:bg-gray-800 transition-colors "
+                  className="w-full px-5 py-3 text-base text-black rounded-full hover:bg-black/5 transition-colors"
                   onClick={toggleMenu}
                 >
                   Resume
-                </a>
+                </LiquidButton>
               </motion.div>
             </div>
           </motion.div>
