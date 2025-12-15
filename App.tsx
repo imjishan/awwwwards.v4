@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header';
+import { Navbar1 } from './components/ui/navbar-1';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 const App: React.FC = () => {
   return (
     <div className="bg-background min-h-screen text-zinc-100 selection:bg-indigo-500/30 selection:text-indigo-200">
-      <Header />
+      <Navbar1 />
       <main>
         <Hero />
         <About />
